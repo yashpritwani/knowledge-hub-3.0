@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/stylesheets/logdes.css">
+    <title>Knowledge hub </title>
+  </head>
+  <body>
+      <div class="lgn">
+          <header>
+              <div class="logo">
+                  <p></p>
+                  <h1><strong>KNOWLEDGE HUB</strong></h1>
+                  <p></p>
+              </div>
+              <div class="navbar">
+                <div class="dropdown">
+                  <button class="dropbtn">MENU</button>
+                  <div class="dropdown-content">
+                    <a href="./myweb">HOME</a>
+                    <a href="./signup">SIGNUP</a>
+                    <a href="./login">LOGIN</a>
+                    <a href="#">ABOUT</a>
+                  </div>
+                </div>
+              </div>
+<% if (success !='') { %>
+   <div class="alert alert-primary" role="alert">
+<strong><%= success %></strong>
+    </div>
+<% } %>
+<div class = "logwh">
+  <form action="/login" method="post">
+   <h1><strong>LOGIN</strong></h1>
+   <p></p>
+   <input type="email" name="email" required placeholder="EMAIL" />
+   <p></p>
+   <input type="password" name="password" required placeholder="PASSWORD"/>
+   <p></p>
+   <input type="submit" value="LOGIN" class="submit" ></input>
+   <p>NOT A MEMBER YET , PLEASE JOIN US<a href="./signup"><p></p>REGISTER</a></p>
+   </form>
+  </div>
+</header>
+</div>
+</body>
+</html>

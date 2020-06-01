@@ -1,0 +1,62 @@
+<html>
+<head><title>Knowledge Hub </title>
+<link rel="stylesheet" href='/stylesheets/design.css'>
+</head>
+<body>
+  <div class="cntr">
+   <div class="logo">
+      <p></p>
+      <h1><strong>KNOWLEDGE HUB</strong></h1>
+      <p></p>
+  </div>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">MENU</button>
+      <div class="dropdown-content">
+        <a href="./myweb">HOME</a>
+        <a href="./signup">SIGNUP</a>
+        <a href="./login">LOGIN</a>
+        <a href="#">ABOUT</a>
+      </div>
+    </div>
+  </div>
+<p></p>
+<table class = "table">
+<thead>
+<tr>
+<th>NAME</th>
+<th>EMAIL</th>
+<th>CNTCT NMBR</th>
+<th>DOB</th>
+</tr>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th>(ddmmyyyy)</th>
+</tr>
+<% if (records !==''){ %>
+<% records.forEach(function(row){ %>
+   <tr>
+     <td><%= row.name %></td>
+     <td><%= row.email %></td>
+     <td><%= row.cno %></td>
+     <td><%= row.dob %></td>
+   </tr>
+<% }) %>
+<% } %>
+</thead>
+</table>
+<div class="btn-lst">
+
+     <input type="submit" value="VIEW ARTICLES" class="submit" ></input>
+     <p></p>
+     <div class="snd">
+     <input type="submit" value="SUBMIT AN ARTICLE" class="submit" ></input>
+     <p></p>
+  </div>
+     <input type="submit" value="VIEW YOUR ARTICLE" class="submit" ></input>
+</div>
+</div>
+</body>
+</html>

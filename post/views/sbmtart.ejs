@@ -1,0 +1,52 @@
+
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="/stylesheets/design.css">
+      <title>Knowledge hub </title>
+    </head>
+    <body>
+        <div class = "whole">
+            <header>
+                <div class="logo">
+                    <p></p>
+                    <h1><strong>KNOWLEDGE HUB</strong></h1>
+                    <p></p>
+                </div>
+                <div class="navbar">
+                  <div class="dropdown">
+                    <button class="dropbtn">MENU</button>
+                    <div class="dropdown-content">
+                      <a href="./myweb">HOME</a>
+                      <a href="./signup">SIGNUP</a>
+                      <a href="./login">LOGIN</a>
+                      <a href="#">ABOUT</a>
+                    </div>
+                  </div>
+                </div>
+                <form action="submit-article" method="post">
+                <div class="ctgry">
+                    <select class="content-type" name="Content- Category">
+                        <option>Choos content category to view articles</option>
+                        <option value="ml">ML and AI</option>
+                        <option value="web-dev">Web Development</option>
+                        <option value="android-dev">Android Development</option>
+                    </select>
+                </div>
+                <input class= "title-art" name= "title-art" placeholder="Enter title for your article"></textarea>
+                <textarea class= "wrt-art" name= "wrt-art" placeholder="Write your article"></textarea>
+                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                        <input type="file" name="Upload image related to article if any" id="fileToUpload">
+                        <input type="submit" value="Upload Image" name="submit">
+                    </form>
+                    <input type="submit" value="SUBMIT YOUR ARTICLE" class="submit" >
+                </form>
+                <div class="btn-lst">
+                    <input type="submit" value="VIEW ARTICLES" class="submit" ></input>
+                </div>
+          </header>
+        </div>
+    </body>
+</html>
